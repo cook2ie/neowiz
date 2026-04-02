@@ -30,6 +30,12 @@
 
 ---
 
+## 💡 What I Learned
+- absolute positioning 기반 레이아웃의 한계 경험
+- 해상도 대응을 고려한 유연한 레이아웃 설계의 중요성
+
+---
+
 ## 📸 Preview
 <img width="3807" height="1895" alt="image" src="https://github.com/user-attachments/assets/02e9fc4e-caf7-4f5e-807a-6d1601933742" />
 
