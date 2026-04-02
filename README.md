@@ -7,7 +7,7 @@
 
 ## 🔗 Live Site
 
-👉 https://cook2ie.github.io/neowiz/
+👉 [(네오위즈 클론코딩 바로가기)](https://cook2ie.github.io/neowiz/)
 
 ---
 
