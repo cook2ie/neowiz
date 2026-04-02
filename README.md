@@ -31,4 +31,5 @@
 ---
 
 ## 📸 Preview
-![main](main.png)
+<img width="100%"alt="image" src="https://github.com/user-attachments/assets/de389698-9f94-4efb-9b9d-581ab2b0c759" />
+
