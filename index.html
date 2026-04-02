@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEOWIZ - NEOWIZ, the magic that makes the world fun</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/neowiz.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+    <!-- favicon -->
+    <link rel="icon" href="neowiz.ico">
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/neowiz.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+            <div class="headerbg"></div>
+            <div class="logo">
+                <a href="#"></a>
+                <ul class="nav_menu">
+                    <li><a class="menu-btn" href="#">네오위즈</a>
+                        <ul class="sub_menu">
+                            <li>회사 소개</li>
+                            <li>연혁</li>
+                            <li>문의하기</li>
+                        </ul>
+                    </li>
+                    <li><a class="menu-btn" href="#">게임</a>
+                        <ul class="sub_menu">
+                            <li>전체</li>
+                            <li>PC</li>
+                            <li>모바일</li>
+                            <li>콘솔</li>
+                        </ul>
+                    </li>
+                    <li><a class="menu-btn" href="#">홍보</a>
+                        <ul class="sub_menu">
+                            <li>보도자료</li>
+                            <li>네오위즈 스토리</li>
+                        </ul>
+                    </li>
+                    <li><a class="menu-btn" href="#">투자정보</a>
+                        <ul class="sub_menu">
+                            <li>기업지배구조</li>
+                            <li>공시정보</li>
+                            <li>주가정보</li>
+                            <li>재무정보</li>
+                            <li>IR자료</li>
+                            <li>공고</li>
+                            <li>지속가능경영</li>
+                        </ul>
+                    </li>
+                    <li><a class="menu-btn" href="#">인재영입</a>
+                        <ul class="sub_menu">
+                            <li>지원 안내</li>
+                            <li>진행 중인 공고</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="kr">
+                    <div class="icon">
+                        <svg class="earth" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8.4732 0.0222214C8.31564 0.0137619 8.1602 1.52588e-05 8.00053 1.52588e-05C7.84086 1.52588e-05 7.68541 0.0137619 7.52786 0.0222214C3.32985 0.26966 0 3.74121 0 7.99949C0 12.2578 3.32985 15.7293 7.52786 15.9757C7.68541 15.9852 7.84086 16 8.00053 16C8.1602 16 8.31564 15.9852 8.4732 15.9757C12.6701 15.7304 16.0011 12.2588 16.0011 7.99949C16.0011 3.74121 12.6701 0.268603 8.4732 0.0222214ZM5.67206 7.99949C5.67206 7.35657 5.72494 6.72528 5.81693 6.11303H10.1841C10.2761 6.72528 10.329 7.35657 10.329 7.99949C10.329 8.64558 10.2761 9.28004 10.1831 9.8944H5.81799C5.72494 9.28004 5.67206 8.64558 5.67206 7.99949ZM11.3304 6.11303H14.6042C14.7766 6.71259 14.8728 7.34494 14.8728 7.99949C14.8728 8.68365 14.766 9.34242 14.5788 9.96631V9.8944H11.3293C11.4129 9.28215 11.4583 8.64875 11.4583 7.99949C11.4583 7.35234 11.4129 6.72211 11.3304 6.11303ZM14.1675 4.98475H11.121C10.8017 3.58154 10.2719 2.32848 9.58245 1.31863C11.6 1.79765 13.2718 3.16491 14.1675 4.98475ZM8.00053 1.13464C8.89194 2.07575 9.57399 3.43032 9.96312 4.98475H6.03794C6.42707 3.43032 7.10806 2.07575 8.00053 1.13464ZM6.41755 1.31969C5.72811 2.33059 5.19833 3.58365 4.88005 4.98475H1.83359C2.72923 3.16702 4.40103 1.79765 6.41755 1.31969ZM1.39687 6.11303H4.67068C4.58714 6.72211 4.54273 7.35234 4.54273 7.99949C4.54273 8.64875 4.58714 9.28215 4.67173 9.8944H1.40004C1.22662 9.29167 1.12934 8.65721 1.12934 7.99949C1.12934 7.34494 1.22556 6.71259 1.39687 6.11303ZM1.83782 11.0237H4.88216C5.20045 12.4206 5.72917 13.6715 6.41755 14.6803C4.4042 14.2024 2.73346 12.8372 1.83782 11.0237ZM8.00053 14.8643C7.11017 13.9253 6.42918 12.5739 6.04005 11.0237H9.96101C9.57081 12.5739 8.89089 13.9253 8.00053 14.8643ZM9.58245 14.6803C10.2708 13.6715 10.7995 12.4206 11.1189 11.0237H14.1632C13.2676 12.8372 11.5969 14.2024 9.58245 14.6803Z"
+                                fill="currentColor"></path>
+                        </svg>
+                        <a id="current-lang">kr</a>
+                    </div>
+                </div>
+        </nav>
+        <nav class="header header-scroll">
+            <div class="headerbg"></div>
+            <div class="logo">
+                <a href="#"></a>
+                <ul class="nav_menu">
+                    <li><a class="menu-btn" href="#">네오위즈</a>
+                        <ul class="sub_menu">
+                            <li>회사 소개</li>
+                            <li>연혁</li>
+                            <li>문의하기</li>
+                        </ul>
+                    </li>
+                    <li><a class="menu-btn" href="#">게임</a>
+                        <ul class="sub_menu">
+                            <li>전체</li>
+                            <li>PC</li>
+                            <li>모바일</li>
+                            <li>콘솔</li>
+                        </ul>
+                    </li>
+                    <li><a class="menu-btn" href="#">홍보</a>
+                        <ul class="sub_menu">
+                            <li>보도자료</li>
+                            <li>네오위즈 스토리</li>
+                        </ul>
+                    </li>
+                    <li><a class="menu-btn" href="#">투자정보</a>
+                        <ul class="sub_menu">
+                            <li>기업지배구조</li>
+                            <li>공시정보</li>
+                            <li>주가정보</li>
+                            <li>재무정보</li>
+                            <li>IR자료</li>
+                            <li>공고</li>
+                            <li>지속가능경영</li>
+                        </ul>
+                    </li>
+                    <li><a class="menu-btn" href="#">인재영입</a>
+                        <ul class="sub_menu">
+                            <li>지원 안내</li>
+                            <li>진행 중인 공고</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="kr">
+                    <div class="icon">
+                        <svg class="earth" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8.4732 0.0222214C8.31564 0.0137619 8.1602 1.52588e-05 8.00053 1.52588e-05C7.84086 1.52588e-05 7.68541 0.0137619 7.52786 0.0222214C3.32985 0.26966 0 3.74121 0 7.99949C0 12.2578 3.32985 15.7293 7.52786 15.9757C7.68541 15.9852 7.84086 16 8.00053 16C8.1602 16 8.31564 15.9852 8.4732 15.9757C12.6701 15.7304 16.0011 12.2588 16.0011 7.99949C16.0011 3.74121 12.6701 0.268603 8.4732 0.0222214ZM5.67206 7.99949C5.67206 7.35657 5.72494 6.72528 5.81693 6.11303H10.1841C10.2761 6.72528 10.329 7.35657 10.329 7.99949C10.329 8.64558 10.2761 9.28004 10.1831 9.8944H5.81799C5.72494 9.28004 5.67206 8.64558 5.67206 7.99949ZM11.3304 6.11303H14.6042C14.7766 6.71259 14.8728 7.34494 14.8728 7.99949C14.8728 8.68365 14.766 9.34242 14.5788 9.96631V9.8944H11.3293C11.4129 9.28215 11.4583 8.64875 11.4583 7.99949C11.4583 7.35234 11.4129 6.72211 11.3304 6.11303ZM14.1675 4.98475H11.121C10.8017 3.58154 10.2719 2.32848 9.58245 1.31863C11.6 1.79765 13.2718 3.16491 14.1675 4.98475ZM8.00053 1.13464C8.89194 2.07575 9.57399 3.43032 9.96312 4.98475H6.03794C6.42707 3.43032 7.10806 2.07575 8.00053 1.13464ZM6.41755 1.31969C5.72811 2.33059 5.19833 3.58365 4.88005 4.98475H1.83359C2.72923 3.16702 4.40103 1.79765 6.41755 1.31969ZM1.39687 6.11303H4.67068C4.58714 6.72211 4.54273 7.35234 4.54273 7.99949C4.54273 8.64875 4.58714 9.28215 4.67173 9.8944H1.40004C1.22662 9.29167 1.12934 8.65721 1.12934 7.99949C1.12934 7.34494 1.22556 6.71259 1.39687 6.11303ZM1.83782 11.0237H4.88216C5.20045 12.4206 5.72917 13.6715 6.41755 14.6803C4.4042 14.2024 2.73346 12.8372 1.83782 11.0237ZM8.00053 14.8643C7.11017 13.9253 6.42918 12.5739 6.04005 11.0237H9.96101C9.57081 12.5739 8.89089 13.9253 8.00053 14.8643ZM9.58245 14.6803C10.2708 13.6715 10.7995 12.4206 11.1189 11.0237H14.1632C13.2676 12.8372 11.5969 14.2024 9.58245 14.6803Z"
+                                fill="currentColor"></path>
+                        </svg>
+                        <a id="current-lang">kr</a>
+                    </div>
+                </div>
+        </nav>
+    </header>
+
+    <section id="1">
+        <div class="main">
+
+            <div class="main_wrapper active" data-id="1">
+                <img class="main_site-bg" src="images/liesofp_bg.png">
+            </div>
+
+            <div class="main_wrapper" data-id="2">
+                <img class="main_site-bg" src="images/browndust_bg.png">
+            </div>
+
+            <div class="main_wrapper" data-id="3">
+                <img class="main_site-bg" src="images/catsoup_bg.png">
+            </div>
+
+            <div class="main_hero">
+                <div class="main_banner-show">
+                    <!-- Lies of P 배너 -->
+                    <div class="main_banner active" data-id="1">
+                        <div class="main_wrapper-banner">
+                            <img class="main_img-banner" src="images/liesofp_inner.png">
+                        </div>
+                        <div class="main_wrapper-character">
+                            <img class="main_img-character" src="images/liesof_cha.png">
+                        </div>
+                        <div class="main_wrapper-logo-btn-text">
+                            <div class="main_wrapper-logo">
+                                <img class="main_img-logo" src="images/liesofp.png">
+                            </div>
+                            <div class="main_div-text">벨에포크 시대를 배경으로 펼쳐지는 잔혹동화 액션 게임</div>
+                        </div>
+                    </div>
+
+                    <!-- Brown Dust 2 배너 -->
+                    <div class="main_banner" data-id="2">
+                        <div class="main_wrapper-banner">
+                            <img class="main_img-banner" src="images/browndust_inner.png">
+                        </div>
+                        <div class="main_wrapper-character">
+                            <img class="main_img-character" src="images/browndust_cha.png">
+                        </div>
+                        <div class="main_wrapper-logo-btn-text">
+                            <div class="main_wrapper-logo">
+                                <img class="main_img-logo" src="images/browndust.png">
+                            </div>
+                            <div class="main_div-text">하이엔드 2D 그래픽으로 즐기는 명작 JRPG</div>
+                        </div>
+                    </div>
+
+                    <!-- Cats & Soup 배너 -->
+                    <div class="main_banner" data-id="3">
+                        <div class="main_wrapper-banner">
+                            <img class="main_img-banner" src="images/catsoup_inner.png">
+                        </div>
+                        <div class="main_wrapper-character">
+                            <img class="main_img-character" src="images/catsoup_cha.png">
+                        </div>
+                        <div class="main_wrapper-logo-btn-text">
+                            <div class="main_wrapper-logo">
+                                <img class="main_img-logo" src="images/catsoup.png">
+                            </div>
+                            <div class="main_div-text">집사들을 위한 힐링 방치형 고양이 게임</div>
+                        </div>
+                        <div class="main_wrapper-mobile-linear-gradient"></div>
+                    </div>
+                    <div class="main_controls">
+                        <button class="prev-btn" id="prev-banner" type="button" aria-label="이전 배너">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                        <button class="next-btn" id="next-banner" type="button" aria-label="다음 배너">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                        <button class="main_frame-parent" id="pause-banner" type="button" aria-label="재생 또는 일시정지">
+                            <div class="main_icon-parent">
+                                <div class="main_icon-function main_icon-function-pause">
+                                    <i class="fa-solid fa-pause"></i>
+                                </div>
+                                <div class="main_icon-function main_icon-function-play d-none">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 배너 리스트 -->
+                <div class="main_side-panel">
+                    <div class="main_list-parent">
+                        <div class="main_list-banner main_list-banner--active" data-id="1">
+                            <div class="main_list-icon">
+                                <img class="main_list-icon-lop" src="images/liesonp_icon.png" alt="Lies of P 아이콘">
+                                <div class="main_list-icon-border"></div>
+                            </div>
+                            <div class="main_text-of-p-parent">
+                                <div class="main_text-of-p">P의 거짓</div>
+                                <div class="main_text-of-p-containera">
+                                    <p class="main_p">벨에포크 시대를 배경으로 펼쳐지는 잔혹동화 액션 게임</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_divider">
+                            <div class="main_divider-child"></div>
+                        </div>
+                        <div class="main_list-banner" data-id="2">
+                            <div class="main_list-icon">
+                                <img class="main_list-icon-lop" src="images/browndust_icon.png" alt="Brown Dust 2 아이콘">
+                                <div class="main_list-icon-border"></div>
+                            </div>
+                            <div class="main_text-of-p-parent">
+                                <div class="main_text-of-p">브라운더스트2</div>
+                                <div class="main_text-of-p-container">
+                                    <p class="main_p">하이엔드 2D 그래픽으로 즐기는 명작 JRPG</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_divider">
+                            <div class="main_divider-child"></div>
+                        </div>
+                        <div class="main_list-banner" data-id="3">
+                            <div class="main_list-icon">
+                                <img class="main_list-icon-lop" src="images/catsoup_icon.png" alt="Cats & Soup 아이콘">
+                                <div class="main_list-icon-border"></div>
+                            </div>
+                            <div class="main_text-of-p-parent">
+                                <div class="main_text-of-p">고양이와 스프</div>
+                                <div class="main_text-of-p-container">
+                                    <p class="main_p">집사들을 위한 힐링 방치형 고양이 게임</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news">
+                <div class="news_container">
+                    <p class="news_title">NEWS</p>
+                    <div class="news_content">
+
+                        <div class="news_item" data-id="3346"
+                            style="background-image: url(&#39;https://cdn.neowiz.com/neowiz-site/assets/media-content/---------7pdxc80s.jpg&#39;)">
+                            <div class="news_sub_content">
+                                <div class="news_desc">네오위즈 ‘고양이와 스프’, ‘클럽디 오아시스’와 콜라보 이벤트 진행</div>
+                                <div class="news_date">2025.7.22</div>
+                            </div>
+                            <div class="news_filter"></div>
+                        </div>
+
+                        <div class="news_item" data-id="3350"
+                            style="background-image: url(&#39;https://cdn.neowiz.com/neowiz-site/assets/media-content/dsgsgsg-eagyrf7k.png&#39;)">
+                            <div class="news_sub_content">
+                                <div class="news_desc">네오위즈, '코어블레이저 게임 페스트 2025' 참가… 글로벌 영향력 넓힌다</div>
+                                <div class="news_date">2025.7.21</div>
+                            </div>
+                            <div class="news_filter"></div>
+                        </div>
+
+                        <div class="news_item" data-id="3348"
+                            style="background-image: url(&#39;https://cdn.neowiz.com/neowiz-site/assets/media-content/----V---3----9kafzc0c.png&#39;)">
+                            <div class="news_sub_content">
+                                <div class="news_desc">네오위즈 ‘디제이맥스 리스펙트 V, 오프라인 공연 3분 만에 전석 ‘매진’ &nbsp;</div>
+                                <div class="news_date">2025.7.21</div>
+                            </div>
+                            <div class="news_filter"></div>
+                        </div>
+                        <div class="news_top_pick">
+                            <p class="news_top_pick_title">Top Picks</p>
+                            <div class="news_top_pick_group">
+                                <div class="news_top_pick_content custom-scrollbar">
+
+                                    <a href="#" class="news_top_pick_text">P의거짓 오케스트라 콘서트</a>
+
+                                    <a href="#" class="news_top_pick_text">오마이앤</a>
+
+                                    <a href="#" class="news_top_pick_text">P의거짓DLC</a>
+
+                                    <a href="#" class="news_top_pick_text">P의거짓: 서곡</a>
+
+                                    <a href="#" class="news_top_pick_text">피망뉴맞고</a>
+
+                                    <a href="#" class="news_top_pick_text">대학생서포터즈</a>
+
+                                    <a href="#" class="news_top_pick_text">쉐이프오브드림즈</a>
+
+                                    <a href="#" class="news_top_pick_text">P의 거짓</a>
+
+                                    <a href="#" class="news_top_pick_text">P의 거짓 DLC</a>
+
+                                    <a href="#" class="news_top_pick_text">아바</a>
+
+                                    <a href="#" class="news_top_pick_text">청강문화산업대학교</a>
+
+                                    <a href="#" class="news_top_pick_text">네오위즈어워드</a>
+
+                                    <a href="#" class="news_top_pick_text">머지서바이벌</a>
+
+                                    <a href="#" class="news_top_pick_text">브라운더스트2</a>
+
+                                    <a href="#" class="news_top_pick_text">스팀할인</a>
+
+                                    <a href="#" class="news_top_pick_text">네오위즈X자카자네</a>
+
+                                    <a href="#" class="news_top_pick_text">아이돌리프라이드</a>
+
+                                    <a href="#" class="news_top_pick_text">디제이맥스</a>
+
+                                    <a href="#" class="news_top_pick_text">디제이맥스리스펙트V</a>
+
+                                    <a href="#" class="news_top_pick_text">DLC</a>
+
+                                    <a href="#" class="news_top_pick_text">고양이와 스프</a>
+
+                                    <a href="#" class="news_top_pick_text">인텔라X</a>
+
+                                    <a href="#" class="news_top_pick_text">안녕서울</a>
+
+                                    <a href="#" class="news_top_pick_text">산나비</a>
+
+                                </div>
+                            </div>
+                            <div class="news_top_pick_btn">
+                                Learn More
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="2">
+
+        <div class='games'>
+            <div class="games_main_title">
+                <h1 class='games_title'>GAMES</h1>
+            </div>
+            <div class='games-slider'>
+                <div class='games-wrapper'>
+                    <!-- Slide 1 -->
+                    <div class='games-slide games_content'>
+                        <img src='images/LOP_1.jpg' class='games_img'>
+                        <h2 class='games_name'>P의 거짓</h2>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class='games-slide games_content'>
+                        <img src='images/BD_2.png' class='games_img'>
+                        <h2 class='games_name'>브라운더스트2
+                        </h2>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class='games-slide games_content'>
+                        <img src='images/CNS_3.png' class='games_img'>
+                        <h2 class='games_name'>고양이와 스프</h2>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class='games-slide games_content'>
+                        <img src='images/DJMAX_4.png' class='games_img'>
+                        <h2 class='games_name'>디제이맥스 리스펙트 V</h2>
+                    </div>
+                </div>
+                <!-- Learn More 버튼 -->
+                <div class='games-button'>Learn More
+                    <div class="icon">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="3">
+
+        <div class="careers">
+            <div class="careers_container">
+                <h1 class="careers_title">CAREERS</h1>
+                <div class="careers_content">
+                    <div class="careers_visual">
+                        <img class="careers_visual-img" src="images/careers.png">
+                        <div class="careers_visual_main">
+                            <div class="careers_visual_inner">
+                                <h3 class="careers_visual_title">새로운 도전을 위한 문이 열렸습니다.</h3>
+                                <div class="careers_visual_pc">
+                                    지금 우리와 함께 새로운 게임의 세계를 만들어나갈 준비가
+                                    되셨나요?
+                                </div>
+                            </div>
+                            <div class="careers_button">
+                                <a href="#">
+                                    <button class="careers_btn_fill">
+                                        Positions 36
+                                    </button>
+                                </a>
+                                <a href="#">
+                                    <button class="careers_btn_stroke">
+                                        Explore Careers
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="careers_job">
+                        <div class="careers_job_container">
+                            <p class="careers_job_title">Job Category</p>
+                            <div class="careers_job_group">
+                                <div class="careers_job_content">
+
+                                    <a href="#" class="careers_item">ROUND8</a>
+
+                                    <a href="#" class="careers_item">게임개발_기획</a>
+
+                                    <a href="#" class="careers_item">Lies of P</a>
+
+                                    <a href="#" class="careers_item">게임서비스</a>
+
+                                    <a href="#" class="careers_item">Global Casino</a>
+
+                                    <a href="#" class="careers_item">QA</a>
+
+                                    <a href="#" class="careers_item">Project Management</a>
+
+                                    <a href="#" class="careers_item">사운드 및 영상</a>
+
+                                    <a href="#" class="careers_item">게임기획</a>
+
+                                    <a href="#" class="careers_item">게임그래픽</a>
+
+                                    <a href="#" class="careers_item">게임프로그래밍</a>
+
+                                    <a href="#" class="careers_item">인재 POOL</a>
+
+                                    <a href="#" class="careers_item">콘텐츠 기획</a>
+
+                                    <a href="#" class="careers_item">ゲームブランドマネージャー</a>
+
+                                    <a href="#" class="careers_item">コミュニティマネージャー</a>
+
+                                    <a href="#" class="careers_item">기술</a>
+
+                                    <a href="#" class="careers_item">게임사업</a>
+
+                                    <a href="#" class="careers_item">Marketing</a>
+
+                                    <a href="#" class="careers_item">경영지원</a>
+
+                                    <a href="#" class="careers_item">로컬라이제이션</a>
+
+                                    <a href="#" class="careers_item">사업 개발</a>
+
+                                    <a href="#" class="careers_item">마케팅</a>
+
+                                    <a href="#" class="careers_item">정규직(Regular)</a>
+
+                                    <a href="#" class="careers_item">프리랜서(Freelancer)</a>
+
+                                    <a href="#" class="careers_item">正社員</a>
+
+                                    <a href="#" class="careers_item">계약직(Contractor)</a>
+
+                                    <a href="#" class="careers_item">인턴(Intern)</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="4">
+
+        <div class="contact_us">
+            <div class="contact_us_title">
+                <div class="contact_us_detail">
+                    <p class="contact_us_detail1">CONTACT US</p>
+                    <h3 class="contact_us_detail2">우리가 찾는 것은 훌륭한 게임입니다.</h3>
+                    <p class="contact_us_detail3">게임 관련 위한 모든 제휴 제안과 문의 환영합니다.</p>
+                    <div class="contact_us_detail4">
+                        Get Connect
+                        <div class="icon">
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="contact_us_2">
+                    <div class="contact-us-map contact-us-map--kr">
+                        <img class="contact-us-map__image" src="images/img_map_01.png">
+                        <img class="contact-us-map__image" src="images/img_map_02.png">
+                        <img class="contact-us-map__image" src="images/img_map_03.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="footer">
+            <div class="footer_container">
+                <div class="footer_main">
+                    <div class="footer_content_1">
+                        <p class="footer_txt1">개인정보처리방침</p>
+                        <p class="footer_txt2">문의하기</p>
+                    </div>
+                    <div class="footer_content_2">
+                        <p class="footer_txt3">사업자등록번호 120-87-14245통신판매업 신고번호 제 2010-경기성남-0562호</p>
+                        <p class="footer_txt4">사업자정보확인</p>
+                    </div>
+                    <div class="footer_content_3">
+                        <p>© NEOWIZ All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="footer_main_2">
+                    <div class="footer_content_4">
+                        <div class="yt"><i class="fa-brands fa-youtube"></i></div>
+                        <div class="ins"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="twi"><i class="fa-brands fa-x-twitter"></i></div>
+                        <div class="link"><i class="fa-brands fa-linkedin"></i></div>
+                    </div>
+
+                    <div class="footer_content_5">
+                        <div class="footer_button-plus" id="toggle-btn">
+                            <span>Family Site</span>
+                            <div class="plus-minus-icon">
+                                <div class="bar horizontal"></div>
+                                <div class="bar vertical"></div>
+                            </div>
+                        </div>
+                        <div id="menu" class="footer_menu">
+                            <div class="footer_menu-item" id="neowiz-holdings">NEOWIZ HOLDINGS</div>
+                            <div class="footer_menu-item" id="game-on">NEOWIZ GameOn</div>
+                            <div class="footer_menu-item" id="foundation">FOUNDATION</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="go_top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        </div>
+
+
+    </footer>
+
+</body>
+
+
+</html>
