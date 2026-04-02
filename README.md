@@ -31,5 +31,6 @@
 ---
 
 ## 📸 Preview
-<img width="100%"alt="image" src="https://github.com/user-attachments/assets/de389698-9f94-4efb-9b9d-581ab2b0c759" />
+<img width="3807" height="1895" alt="image" src="https://github.com/user-attachments/assets/02e9fc4e-caf7-4f5e-807a-6d1601933742" />
+
 
