@@ -6,7 +6,7 @@
 ---
 
 ## 🔗 Live Site
-👉 (배포 링크 넣기)
+👉 [(배포 링크 넣기)](https://cook2ie.github.io/neowiz/)
 
 ---
 
