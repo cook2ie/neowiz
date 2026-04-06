@@ -12,15 +12,15 @@
 ---
 
 ## 🧩 Overview
-반응형 웹 구현 (PC / Tablet / Mobile)  
-시멘틱 마크업 기반 구조 설계  
-UI 컴포넌트 단위 퍼블리싱  
+- 반응형 웹 구현 (PC / Tablet / Mobile)  
+- 시멘틱 마크업 기반 구조 설계  
+- UI 컴포넌트 단위 퍼블리싱  
 
 ---
 
 ## 🛠 Tech Stack
-HTML / CSS / JavaScript  
-jQuery  
+- HTML / CSS / JavaScript  
+- jQuery  
 
 ---
 
