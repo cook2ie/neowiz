@@ -31,14 +31,6 @@ jQuery
 
 ---
 
-## 💡 What I Learned
-position과 고정 좌표(px, %)에 의존한 레이아웃이 고해상도 환경(특히 4K)에서 깨지는 문제를 경험  
-단순 위치 보정이 아닌, 레이아웃 구조 자체를 flex / grid 기반으로 재설계  
-max-width와 margin: 0 auto를 활용해 다양한 해상도에서도 안정적인 중앙 정렬 구현  
-UI를 "위치"가 아닌 "흐름"으로 설계하는 방식의 중요성을 이해  
-
----
-
 ## 🔧 Refactoring
 기존 position 중심 레이아웃 → flex / grid 기반 구조로 개선  
 고정 width(1920px) 제거 및 유동 레이아웃으로 수정  
@@ -48,5 +40,13 @@ UI를 "위치"가 아닌 "흐름"으로 설계하는 방식의 중요성을 이�
 
 ## 📸 Preview
 <img src="https://github.com/user-attachments/assets/02e9fc4e-caf7-4f5e-807a-6d1601933742" />
+
+---
+
+## 💡 What I Learned
+position과 고정 좌표(px, %)에 의존한 레이아웃이 고해상도 환경(특히 4K)에서 깨지는 문제를 경험  
+단순 위치 보정이 아닌, 레이아웃 구조 자체를 flex / grid 기반으로 재설계  
+max-width와 margin: 0 auto를 활용해 다양한 해상도에서도 안정적인 중앙 정렬 구현  
+UI를 "위치"가 아닌 "흐름"으로 설계하는 방식의 중요성을 이해
 
 
